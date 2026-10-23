@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>휴대폰 시뮬레이터</title>
+<meta name="description" content="아이폰 감성의 완벽한 인터랙티브 가상 스마트폰 시뮬레이터. 전화, 메시지, 카카오톡, 메모, 사진첩, 인스타그램, 에브리타임, 지뢰찾기, 캘린더, 설정 등 다양한 앱을 지원합니다.">
+<meta property="og:title" content="휴대폰 시뮬레이터">
+<meta property="og:description" content="아이폰 감성의 완벽한 인터랙티브 가상 스마트폰 시뮬레이터. 전화, 메시지, 카카오톡, 메모, 사진첩, 인스타그램, 에브리타임, 지뢰찾기, 캘린더, 설정 등 다양한 앱을 지원합니다.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- 스타일 -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/tailwind.css">
+<link rel="stylesheet" href="css/dark-light-fix.css">
+
+<!-- 설정/이미지/오디오 변수 (앱 번들보다 먼저 로드되어야 함) -->
+<script src="js/ai-reply.js"></script>
+<script src="js/data/00a-story-image.js"></script>
+<script src="js/data/00b-story-base.js"></script>
+<script src="js/core/lyc-carousel.js"></script>
+<script src="js/data/00c-call-audio.js"></script>
+<script src="js/data/00d-yj-call-audios.js"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- 앱 내용 데이터: 카톡·인스타·메모·통화·메시지 등은 js/data/ 에서 수정하세요 (app.js 보다 먼저 로드) -->
+<script src="js/data/01-settings.js"></script>
+<script src="js/data/02-lockscreen.js"></script>
+<script src="js/data/03-phone.js"></script>
+<script src="js/data/04-kakao.js"></script>
+<script src="js/data/05-kakao-fallback-replies.js"></script>
+<script src="js/data/06-messages.js"></script>
+<script src="js/data/07-notes.js"></script>
+<script src="js/data/08-gallery.js"></script>
+<script src="js/data/09-insta-profiles.js"></script>
+<script src="js/data/10-instagram.js"></script>
+<script src="js/data/11-calendar.js"></script>
+<script src="js/data/12-home-apps.js"></script>
+<script src="js/data/13-chrome-clock.js"></script>
+
+<!-- 앱 본체 (React 번들) -->
+<script src="js/app.js"></script>
+</body></html>
